@@ -1,0 +1,189 @@
+.cartPage{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cartContents{
+
+    width: 65%;
+    background-color: rgba(241, 247, 245, 0.237);
+    height: 83vh;
+    border: 1px solid #d8d8df;
+    padding: 4vh 2vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cartItem{
+    display: flex;
+    gap: 3vw;
+
+}
+.cartItem img{
+
+    width: 25%;
+    height: 25vh;
+    object-fit: cover;
+    
+}
+
+.cartItem-data {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    /* add/adjust properties as needed for your layout */
+}
+
+/* ensure span selector is a real ruleset (was flagged as empty) */
+.cartItem-data span {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+/* h5 inside span */
+.cartItem-data span h5 {
+    font-size: 0.9rem;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* bold inside h5 */
+.cartItem-data span h5 b {
+    font-weight: 600;
+}
+
+/* button inside cartItem-data */
+.cartItem-data button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #504aec;
+    padding: 0.2rem;
+}
+
+.cartItem-inputs{
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cartItem-inputs span{
+
+    display: flex;
+    align-items: center;
+}
+
+.cartItem-inputs span p{
+    display: flex;   
+    gap: 10px;
+    margin: 0;
+}
+
+.cartItem-inputs span p b{
+    font-weight: 600;
+}
+
+.cartItem-inputs div{
+    /* width: 20vw; */
+    display: flex;
+    align-items: center;
+    height: 30px;
+    gap: 5px;
+}
+.cartItem-inputs input{
+    max-width: 40px;
+    padding: 0;
+    padding-left: 10px;
+    font-size: 0.7rem;
+    height: 20px;
+}
+.cartItem-inputs div button{
+    /* height: 20px; */
+    padding: 0;
+    padding-bottom: 4px;
+    margin: 0;
+}
+
+
+.cartPriceBody{
+
+    width: 24%;
+    height: fit-content;
+    background-color: rgba(240, 245, 245, 0.345);
+    /* margin-left: 3%; */
+    padding: 3vh 2vw;
+    border: 1px solid #dfdadaeb;
+    border-radius: 0.3rem;
+
+}
+
+.cartPriceBody h4{
+    margin-bottom: 3vh;
+    color: rgb(103, 120, 146);
+}
+
+.cartPriceBody span{
+    display: block; /* avoid empty ruleset */
+    color: inherit;
+    justify-content: space-between;
+}
+
+.cartPriceBody span b{
+
+    font-weight: 600;
+}
+
+.cartPriceBody span p{
+    
+    margin-bottom: 10px;
+}
+
+.cartPriceBody hr{
+    border: none;
+    border-top: 1px solid #e6e6e6;
+    margin: 1rem 0;
+}
+
+.cartPriceBody h5{
+
+    font-weight: 400;
+    color: rgb(36, 57, 78);
+}
+
+.cartPriceBody h5 b{
+
+    font-weight: 600;
+}
+
+.cartPriceBody button{
+
+    width: 100%;
+    padding: 13px 0;
+    font-weight: 600;
+    margin: 3vh 0;
+    background-color: #504aec;
+    color: aliceblue;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+
+.modal-body .checkout-address section{
+    display: flex;
+    gap: 3%;
+}
+.span-child-1{
+    width: 65%;
+}
+
+.some-selector {
+    /* change start -> flex-start */
+    justify-content: flex-start;
+}
