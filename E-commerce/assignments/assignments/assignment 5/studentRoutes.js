@@ -1,0 +1,15 @@
+const express=require('express')
+const studentRoutes=express.Router()
+// const {loginUser,getUsers,updateUser,deleteUser}=require('../controlers/studentController')
+// studentRoutes.post('/insert-user',loginUser)
+// studentRoutes.get('/get-users',getUsers)
+// studentRoutes.put('/update-users/:id',updateUser)
+// studentRoutes.delete('/delete-users/:name',deleteUser)
+const {registerUser,updateUser,getUsers,deleteUser}=require('../controlers/studentController')
+// studentRoutes.post('/insert-user',registerUser)
+studentRoutes.post('/insert-user',registerUser)
+studentRoutes.get('/get-users',getUsers)
+studentRoutes.put('/update-users/:id',updateUser)
+studentRoutes.delete('/delete-users/:name',deleteUser)
+
+module.exports= studentRoutes;
